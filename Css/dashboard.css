@@ -1,0 +1,118 @@
+body {
+    background: url(/assets/Fondo-1.png) no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+  }
+
+  main.contenido-principal {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+  }
+
+  .menu-superior nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  .menu-superior button {
+    background-color: #f58bb4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .menu-inferior {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+  }
+  
+  .menu-inferior button {
+    background-color: transparent;
+    border: 2px solid #f58bb4;
+    color: #e55997;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .caja-bienvenida {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+  }
+  
+  .caja-bienvenida h1 {
+    font-size: 2.5rem;
+    color: #e55997;
+    margin-bottom: 10px;
+  }
+  
+  .caja-bienvenida p {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn-inicio {
+    background-color: #f58bb4;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .logo-bienvenida {
+    width: 160px;
+  }
+  
+
+  .cerrar-sesion button {
+    background-color: transparent;
+    border: 2px solid #f58bb4;
+    color: #e55997;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .cerrar-sesion button:hover {
+    background-color: #f58bb4;
+    color: white;
+  }
+
+  .boton-link {
+  background-color: #e55997;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}

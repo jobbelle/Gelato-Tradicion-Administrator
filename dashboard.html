@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Panel Principal - Gelato & Tradición</title>
+  <link rel="stylesheet" href="/Css/dashboard.css" />
+</head>
+<body class="dashboard-page">
+  <header class="menu-superior">
+    <nav>
+      <button onclick="navegar('productos')">Productos</button>
+      <a href="admin.html" class="boton-link">Administrador</a>
+      <button onclick="navegar('contable')">Contable</button>
+    </nav>
+
+    <div class="cerrar-sesion">
+        <button onclick="cerrarSesion()">Cerrar sesión</button>
+      </div>
+
+  </header>
+
+  <main class="contenido-principal">
+    <div class="caja-bienvenida">
+      <h1>¡Bienvenido!</h1>
+      <p>Iniciemos un gran día</p>
+      <a href="venta.html"><button class="btn-inicio">Inicio</button></a>
+      <img src="/assets/Logo-Gelato-1.png" alt="Logo Gelato" class="logo-bienvenida" />
+    </div>
+  </main>
+  
+
+  <footer class="menu-inferior">
+    <button>Problema</button>
+    <button>Ayuda</button>
+  </footer>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

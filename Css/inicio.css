@@ -1,0 +1,114 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(/assets/Fondo-1.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  height: 60px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 1rem;
+}
+
+.formulario {
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.formulario h2 {
+  margin: 0;
+  font-size: 26px;
+  color: #000;
+}
+
+.formulario h3 {
+  margin: 10px 0 20px;
+  font-size: 22px;
+  color: #f26ca7;
+}
+
+.input-nombre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.input-nombre span {
+  background-color: #f26ca7;
+  padding: 0.7rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+#nombreCliente {
+  padding: 0.7rem;
+  border: 2px solid #f26ca7;
+  border-radius: 10px;
+  width: 250px;
+  font-size: 16px;
+}
+
+.boton-ayuda {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f26ca7;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.boton-ayuda:hover {
+  background-color: #e04585;
+}
+
+.botones-inferiores {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.botones-inferiores button {
+  background-color: #f278b2;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.botones-inferiores button:hover {
+  background-color: #f5a1c4;
+}
+
+@media (max-width: 600px) {
+  .input-nombre {
+    flex-direction: column;
+  }
+
+  #nombreCliente {
+    width: 100%;
+  }
+}

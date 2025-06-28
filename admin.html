@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Gelato & Tradicion</title>
+    <link rel="stylesheet" href="/Css/admin.css">
+</head>
+<body>
+    
+<!-- Menú superior -->
+  <header class="menu-superior">
+    <h1>Panel del Administrador</h1>
+    <nav>
+      <a href="dashboard.html" class="boton-link">Volver al Dashboard</a>
+      <button onclick="cerrarSesion()">Cerrar sesión</button>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="contenido-principal">
+    <section class="titulo-seccion">
+      <h2>Inventario de Materias Primas</h2>
+    </section>
+
+    <section class="contenedor-tabla">
+      <h3>🍨 Sabores de helado</h3>
+      <div id="tabla-sabores"></div>
+    </section>
+
+    <section class="contenedor-tabla">
+      <h3>🍫 Toppings</h3>
+      <div id="tabla-toppings"></div>
+    </section>
+
+    <section class="contenedor-tabla">
+      <h3>🥛 Materias primas</h3>
+      <div id="tabla-materias"></div>
+    </section>
+  </main>
+
+  <section class="formulario-agregar">
+  <h3>➕ Agregar nuevo insumo</h3>
+  <form id="form-agregar" onsubmit="agregarInsumo(event)">
+    <input type="text" id="nombre" placeholder="Nombre del insumo" required>
+    <input type="number" id="cantidad" placeholder="Cantidad" required>
+    <input type="text" id="unidad" placeholder="Unidad (Kg, Litros, etc.)" required>
+    
+    <select id="categoria" required>
+      <option value="" disabled selected>Selecciona una categoría</option>
+      <option value="sabores">Sabores de helado</option>
+      <option value="toppings">Toppings</option>
+      <option value="materias primas">Materias primas</option>
+    </select>
+
+    <button type="submit">Agregar</button>
+  </form>
+</section>
+
+<!-- Modal de edición -->
+<div id="modal-editar" class="modal">
+  <div class="modal-contenido">
+    <span class="cerrar" onclick="cerrarModal()">&times;</span>
+    <h3>Editar insumo</h3>
+    <form id="form-editar" onsubmit="guardarEdicion(event)">
+      <input type="text" id="editar-nombre" placeholder="Nombre del insumo" required>
+      <input type="number" id="editar-cantidad" placeholder="Cantidad" required>
+      <input type="text" id="editar-unidad" placeholder="Unidad" required>
+      <select id="editar-categoria" required>
+        <option value="sabores">Sabores de helado</option>
+        <option value="toppings">Toppings</option>
+        <option value="materias primas">Materias primas</option>
+      </select>
+      <button type="submit">Actualizar</button>
+    </form>
+  </div>
+</div>
+
+
+  <script src="/js/admin.js"></script>
+
+</body>
+</html>
