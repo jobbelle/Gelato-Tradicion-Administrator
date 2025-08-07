@@ -11,6 +11,9 @@ const port = 3000;
 app.use(cors());
 app.use(bodyParser.json());
 
+app.use(express.static(__dirname));
+
+
 // Configuración de la base de datos
 const db = mysql.createConnection({
   host: 'localhost',
@@ -27,6 +30,14 @@ db.connect((err) => {
     return;
   }
   console.log('✅ Conexión exitosa a la base de datos MySQL');
+});
+
+const path = require('path');
+
+app.use(express.static(path.join(__dirname, '../public')));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../public/index.html'));
 });
 
 // Ruta para obtener todos los productos
