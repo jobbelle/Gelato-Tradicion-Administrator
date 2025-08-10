@@ -2,31 +2,33 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Nombre del Cliente | Gelato & Tradición</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio Pedido - Gelato & Tradición</title>
   <link rel="stylesheet" href="/Css/inicio.css">
 </head>
 <body>
 
-  <!-- Logo -->
-  <img src="/assets/logoBlanco-Gelato.png" alt="Logo Gelato" class="logo">
-
-  <div class="contenedor">
-    <div class="formulario">
-      <h2>PARA INICIAR TU PEDIDO</h2>
-      <h3>PRIMERO INGRESA<br>TU NOMBRE</h3>
-
-      <div class="input-nombre">
-        <span>Aa</span>
-        <input type="text" id="nombreCliente" placeholder="Tu nombre aquí" />
-      </div>
-
-      <button class="boton-ayuda" onclick="guardarNombre()">Ayuda</button>
-    </div>
+  <div class="logo">
+    <img src="/assets/logoBlanco-Gelato.png" alt="Logo Gelato">
   </div>
 
+  <main class="contenedor">
+    <div class="formulario">
+      <h2>Bienvenido a Gelato & Tradición</h2>
+      <h3>Ingresa tu nombre para comenzar:</h3>
+
+      <div class="input-nombre">
+        <span>👤</span>
+        <input type="text" id="nombreCliente" placeholder="Tu nombre">
+      </div>
+
+      <button class="boton-ayuda" id="btnComenzar">Comenzar Pedido</button>
+    </div>
+  </main>
+
   <div class="botones-inferiores">
-    <button onclick="cancelarPedido()">Cancelar</button>
-    <button onclick="irAtras()">Atrás</button>
+    <button id="btnCancelar">Cancelar</button>
+    <button id="btnAtras">Atrás</button>
   </div>
 
   <script src="/js/inicio.js"></script>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gelato & Tradición - Tamaño</title>
+  <link rel="stylesheet" href="/Css/tamano.css">
+</head>
+<body>
+
+  <!-- Logo -->
+  <img src="/assets/logoBlanco-Gelato.png" alt="Logo Gelato" class="logo">
+
+  <div class="contenedor-tamano">
+    <h2>¿QUÉ TAMAÑO DE VASO <br><span>DESEA?</span></h2>
+
+    <div class="opciones-tamano">
+      <button onclick="seleccionarTamano('pequeno', 1, 1)" class="btn-opcion">
+        <strong>PEQUEÑO</strong>
+        <div class="precio">$2.000</div>
+        <small>1 BOLA + 1 TOPPING</small>
+      </button>
+      <button onclick="seleccionarTamano('mediano', 2, 2)" class="btn-opcion">
+        <strong>MEDIANO</strong>
+        <div class="precio">$4.000</div>
+        <small>2 BOLAS + 2 TOPPINGS</small>
+      </button>
+      <button onclick="seleccionarTamano('grande', 3, 3)" class="btn-opcion">
+        <strong>GRANDE</strong>
+        <div class="precio">$6.000</div>
+        <small>3 BOLAS + 3 TOPPINGS</small>
+      </button>
+    </div>
+  </div>
+
+  <div class="botones-inferiores">
+    <button onclick="irAtras()">Atrás</button>
+    <button onclick="irCancelar()">Cancelar</button>
+  </div>
+
+  <script src="/Js/tamano.js"></script>
+</body>
+</html>

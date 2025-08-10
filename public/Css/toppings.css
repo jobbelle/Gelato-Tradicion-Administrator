@@ -1,0 +1,97 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(/assets/Fondo-1.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  height: 60px;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 1rem;
+}
+
+.recuadro-sabores {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.recuadro-sabores h2 {
+  margin-bottom: 1.5rem;
+  font-size: 28px;
+  color: #000;
+}
+
+.grid-sabores {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-sabor {
+  background-color: #f26ca7;
+  color: white;
+  padding: 1rem;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.card-sabor:hover {
+  background-color: #e04585;
+  transform: scale(1.05);
+}
+
+.card-sabor.seleccionado {
+  outline: 3px solid #fff;
+  background-color: #f9e2ec;
+  color: #c93b77;
+}
+
+.mensaje-info {
+  font-size: 14px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.botones-inferiores {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.botones-inferiores button {
+  background-color: #f278b2;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+
+.botones-inferiores button:hover {
+  background-color: #f5a1c4;
+}
+
+@media (max-width: 900px) {
+  .grid-sabores {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

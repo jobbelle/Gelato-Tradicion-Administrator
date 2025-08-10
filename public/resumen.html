@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resumen del Pedido - Gelato & Tradición</title>
+  <link rel="stylesheet" href="/Css/resumen.css">
+  <script src="/js/resumen.js" defer></script>
+</head>
+<body>
+  <!-- Logo -->
+  <img src="/assets/logoBlanco-Gelato.png" alt="Logo Gelato" class="logo">
+
+  <div class="contenedor">
+    <div class="card-resumen">
+      <h2>Resumen de tu pedido</h2>
+
+      <div class="fila">
+        <div class="item">
+          <span class="label">Cliente</span>
+          <span id="r-nombre" class="valor">—</span>
+        </div>
+        <div class="item">
+          <span class="label">Tamaño</span>
+          <span id="r-tamano" class="valor">—</span>
+        </div>
+      </div>
+
+      <div class="bloque">
+        <span class="label">Sabores</span>
+        <div id="r-sabores" class="chips">—</div>
+      </div>
+
+      <div class="bloque">
+        <span class="label">Toppings</span>
+        <div id="r-toppings" class="chips">—</div>
+      </div>
+
+      <div class="acciones">
+        <button class="btn-sec" id="btnVolver">Volver</button>
+        <button class="btn-prim" id="btnConfirmar">Confirmar pedido</button>
+      </div>
+    </div>
+
+    <p class="nota">Puedes iniciar un nuevo pedido al confirmar. ¡Gracias por elegir Gelato & Tradición! 🍦</p>
+  </div>
+</body>
+</html>
